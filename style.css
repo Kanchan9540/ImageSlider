@@ -1,0 +1,56 @@
+
+/* here we style the body */
+body{
+    margin: 0px;
+
+}
+
+/* here we style the main container */
+.slide-container{
+        position: relative;    /* hamne isko position relative isliye kar rahe h kyuki iske andr ke saare element ko position-absolute karenge or position-absolute tabhi kaam krta hai jab uska parent position relative ho. */
+        width: 100%;
+}
+
+/* here we style the images-1 slides */
+.slide img{
+        width: 100%;
+        height: 80%;
+}
+
+/* here we style the arrow */
+.arrow{
+        cursor: pointer;
+        position: absolute;
+        top: 40%;  /* shift arrow on the bottom-to-top */
+        color: black;
+        background-color: white;
+        padding: 8px 19px;
+        border-radius: 50%; 
+        font-size: 25px; 
+        font-weight: bold;
+}
+.next{
+    right: 10px;   /* due to this we copy the left arrow to the left side. */
+}
+.prev{
+    left: 10px;   /* due to this we copy the left arrow to the left side. */
+}
+
+
+/* here we style the caption */
+.caption{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 32%;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.511);
+        padding: 12px 0px;
+}
+
+/* here we style the slide */
+.slide{
+    display: none;  /* here we hide eveything */
+}

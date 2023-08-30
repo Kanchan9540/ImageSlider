@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+
+    <!-- here we add the style file -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <!-- here we make a container for sliding images. -->
+    <div id="slide-container"></div>
+    
+    <!-- here we make a single-single div for containing the images & text.  -->
+    <div class="slide">   <!-- here we make a div for containing  images -->
+        <img src="./img-2.jpg" alt="">
+        <div class="caption"> Caption Text 1</div> <!-- we make this div for containing text. -->
+    </div>
+
+      <div class="slide">   <!-- here we make a div for containing images -->
+        <img src="./img-3.jpg" alt="">
+        <div class="caption"> Caption Text 2</div> <!-- we make this div for containing text. -->
+    </div>
+
+    <div class="slide">   <!-- here we make a div for containing images -->
+        <img src="./img-4.jpg" alt="">
+        <div class="caption"> Caption Text 3</div> <!-- we make this div for containing text. -->
+    </div>
+
+    <div class="slide">   <!-- here we make a div for containing images -->
+        <img src="./img-5.jpg" alt="">
+        <div class="caption"> Caption Text 4</div> <!-- we make this div for containing text. -->
+    </div>  
+
+
+    <!-- here we make a arrow for click right or left. -->
+     <span class="arrow prev" onclick="controller(-1)">&#10094;</span>  <!-- here we make a span for make the right and left arrow & here we use a online code for icons -->
+     <span class="arrow next" onclick="controller(1)">&#10095;</span>   <!--  yha hamne onclick event ke through arrow controll function ko call kiya hai jo ki hamara js file me present hai. yha hamne previous karne k liye (-1) or next karne k liye (+1) pass kiya h argument wale place par.  -->
+  
+     
+     <!-- here we add the java-script file -->
+     <script src="./script.js"></script>
+</body>
+</html>
